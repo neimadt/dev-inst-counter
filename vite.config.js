@@ -6,10 +6,12 @@ const PORT = process.env.PORT || 5174;
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    port: PORT
+    port: PORT,
+    host: '0.0.0.0'
   },
   preview: {
-    port: PORT
+    port: PORT,
+    host: '0.0.0.0'
   },
   plugins: [react()],
 })
